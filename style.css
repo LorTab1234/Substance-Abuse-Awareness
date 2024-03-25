@@ -1,0 +1,651 @@
+/* Reset some default browser styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white; /* Change as per your preference */
+    color: black; /* Text color */
+    font-family: "Nunito";
+    position: fixed;
+    top: 0px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    transition: top 0.3s; /* Smooth transition */
+    z-index: 1000; /* Ensure navbar is on top */
+}
+
+.navbar.active {
+    top: 0; /* Show navbar when active */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+
+.logo {
+    margin-left: 300px
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-right: 40px; /* Adjust spacing between menu items */
+}
+
+.menu ul li:last-child {
+    margin-right: 350px; /* Remove margin for last item */
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px; /* Adjust size as needed */
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey; /* Change as per your preference */
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: grey; /* Hover state background color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* everything under the navbar */ 
+.content {
+    margin-top: 100px; /* Adjust according to navbar height */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+/* for welcome section */
+.welcome {
+    background-image: url('welcomepageimg.jpg'); /* Replace with your image */
+    opacity:85%;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    font-family:"Nunito";
+}
+
+.learn-more img {
+    max-width:200px;
+    max-height:200px;
+}
+
+.container-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-2 h1 {
+    font-size:40px;
+}
+
+.container-2-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/*intiatives and services on home page */
+.statistics-home {
+    background-color:rgb(237, 236, 236);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.container-4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family:"Nunito";
+}
+
+.container-4-content {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: space-around;
+}
+
+.statistic {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.statistic img {
+    width: 100%;
+    max-width: 250px; /* Adjust maximum width as needed */
+    height: 250px;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.stat-1 img {
+    max-width:1000px;
+    max-height:200px;
+    margin-top:50px;
+}
+
+.statistic h3 {
+    font-size: 24px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.statistic p {
+    font-size: 16px; /* Adjust size as needed */
+    color: #555; /* Adjust color as needed */
+}
+
+
+/* news section for the home page */
+.news-home {
+    background-color: darkgrey;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    font-family: "Nunito";
+}
+
+.container-5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-5-content {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    max-width: 200px; /* Adjust maximum width as needed */
+    height: auto;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.news-item h3 {
+    font-size: 24px; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.news-item p {
+    font-size: 16px; /* Adjust size as needed */
+    color: #555; /* Adjust color as needed */
+}
+
+/* footer */
+.footer {
+    background-color: rgb(100, 100, 168);
+    color: #fff;
+    padding: 50px 0;
+    font-family: "Nunito";
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* about page */
+.about-page-content {
+    margin-top: 100px; /* Adjust according to navbar height */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+/* for about us section */
+.about-us {
+    background-color: rgb(237, 236, 236);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.about-us-img {
+    align-items:center;
+}
+
+.about-us-img img{
+    width: 100%;
+    max-width: 200px; /* Adjust maximum width as needed */
+    height: auto;
+    margin-left:150px;
+    float:left;
+}
+
+
+
+
+
+.container-about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-us-text {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:right;
+    margin-left:450px;
+    width:600px;
+}
+
+/* for our mission section */
+.our-mission {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.container-our-mission {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.our-mission-text {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:left;
+    margin-left:150px;
+    width:500px;
+}
+
+
+.our-mission-img {
+    align-items:center;
+}
+
+.our-mission-img img{
+    width: 100%;
+    max-width: 300px; /* Adjust maximum width as needed */
+    height: auto;
+    margin-right:150px;
+    float:right;
+}
+
+/* for what is substance abuse */
+.what-is-substance-abuse {
+    background-color:rgb(237, 236, 236);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.container-what-is {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.what-is-text {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:right;
+    margin-left:500px;
+    width:550px;
+}
+
+
+.substance-abuse-vid {
+    align-items:center;
+}
+
+.substance-abuse-vid iframe{
+    float:left;
+    margin-left:150px;
+    height: 215px;
+    width:315px;
+}
+
+
+/* for consequences section */
+.consequences {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.container-consequences {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.consequences-text {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:left;
+    margin-left:50px;
+    width:600px;
+}
+
+.consequences-text li {
+    width:700px;
+}
+
+.consequences-vid {
+    align-items:center;
+}
+
+.consequences-vid iframe{
+    float:right;
+    margin-right:50px;
+    margin-top:125px;
+    height: 315px;
+    width:460px;
+}
+
+
+
+/* for factors section */
+.factors {
+    background-color:rgb(237, 236, 236);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.container-factors {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.factors-text {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:right;
+    margin-left:550px;
+    width:600px;
+}
+
+
+.factors-vid {
+    align-items:center;
+}
+
+.factors-vid iframe{
+    float:left;
+    margin-top:125px;
+    margin-left:50px;
+    height: 315px;
+    width:460px;
+}
+
+
+/* initiatives and services page*/
+.initiatives {
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.container-initiatives {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.initiatives-text {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:center;
+    margin:auto;
+    width:600px;
+}
+
+.initiative-email-box {
+    font-family:"Nunito";
+    text-align:center;
+}
+
+.seminar img {
+    max-width:3000px;
+}
+
+.barbeque img {
+    max-width:325px;
+}
+
+
+
+/*news page*/
+.news {
+    background-color: darkgrey;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    font-family: "Nunito";
+}
+
+.container-5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-5-content {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    max-width: 400px; /* Adjust maximum width as needed */
+    height: auto;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.heading h3 {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:center;
+    margin:auto;
+    width:400px;
+}
+
+.news-item p {
+    font-size: 16px; /* Adjust size as needed */
+    color: black; /* Adjust color as needed */
+}
+
+
+
+/* articles */
+.article {
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    font-family: "Nunito";
+}
+
+.article h3 {
+    color:black;
+}
+
+.article p {
+    font-family: "Nunito";
+    justify-content: space-around;
+    text-align:center;
+    margin:auto;
+    width:1000px;
+}
+
+.article img {
+    max-width: 800px;
+}
+
+.articleimg2 img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+/* for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Add margin to the logo for separation */
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: -200px; /* Sidebar initially hidden */
+        width: 200px;
+        height: 100%;
+        background-color: #003b71; /* Change as per your preference */
+        overflow-y: auto;
+        transition: left 0.3s ease; /* Smooth transition */
+    }
+
+    .menu.active {
+        left: 0; /* Sidebar visible */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px; /* Adjust spacing between menu items */
+    }
+
+    .menu ul li:last-child {
+        margin-bottom: 0; /* Remove margin for last item */
+    }
+}
